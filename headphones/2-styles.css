@@ -1,0 +1,69 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+  padding: 20px;
+}
+
+#our-results {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+#our-results h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.results-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.result-item {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 30%;
+  min-width: 250px;
+}
+
+.result-item h3 {
+  font-size: 2rem;
+  color: #FF6565;
+  margin-bottom: 10px;
+}
+
+.result-item p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+@media (max-width: 480px) {
+  .results-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .result-item {
+      width: 80%;
+  }
+}
+.result-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
